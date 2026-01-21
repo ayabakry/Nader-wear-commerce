@@ -46,14 +46,14 @@ const Contact = () => {
             </a>
 
             <a
-              href=""
+            
               className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-dark-bg transition-colors"
             >
               <i className="fab fa-instagram"></i>
             </a>
 
             <a
-              href=""
+              
               className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-dark-bg transition-colors"
             >
               <i className="fab fa-x-twitter"></i>
