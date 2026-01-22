@@ -20,7 +20,7 @@ const ProductDetailsModal = ({ product, onClose }) => {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-72 object-cover rounded-t-xl"
+            className="w-full h-72 object-contain rounded-t-xl bg-gray-100"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-t-xl"></div>
         </div>
