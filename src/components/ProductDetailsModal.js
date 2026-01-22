@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
 
 const ProductDetailsModal = ({ product, onClose }) => {
-  if (!product) return null;
+  // Prevent background scroll when modal is open
+  useEffect(() => {
+    if (product) {
+      document.body.style.overflow = 'hidden';
+      return () => {
+        document.body.style.overflow = '';
+      };
+    }
+  }, [product]);
 
+  if (!product) return null;
   const handleBackdropClick = (e) => {
     if (e.target === e.currentTarget) {
       onClose();
