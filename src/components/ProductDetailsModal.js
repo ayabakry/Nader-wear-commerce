@@ -39,7 +39,7 @@ const ProductDetailsModal = ({ product, onClose }) => {
               href={`https://wa.me/201020881988?text=I'm interested in ${product.name}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 text-center"
+              className="flex-1 bg-brand-blue hover:from-blue-600 hover:to-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 text-center"
             >
               Buy on WhatsApp
             </a>

@@ -9,7 +9,7 @@ const Product = ({ product, onClick }) => {
       <img
         src={product.image}
         alt={product.name}
-        className="w-full h-48 object-cover rounded-md mb-4"
+        className="w-full h-48 object-contain rounded-md mb-4 b"
       />
       <h3 className="text-xl font-semibold text-white mb-2">{product.name}</h3>
       {/* <p className="text-gray-300 mb-4">{product.description}</p> */}
