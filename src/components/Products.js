@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Product from './Product';
+import ProductDetailsModal from './ProductDetailsModal';
 
 const Products = () => {
+  const [selectedProduct, setSelectedProduct] = useState(null);
+
   const products = [
     {
       id: 1,
@@ -33,6 +36,14 @@ const Products = () => {
     }
   ];
 
+  const handleProductClick = (product) => {
+    setSelectedProduct(product);
+  };
+
+  const closeModal = () => {
+    setSelectedProduct(null);
+  };
+
   return (
     <section id="products" className="py-16 px-4">
       <div className="max-w-6xl mx-auto">
@@ -41,9 +52,12 @@ const Products = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {products.map(product => (
-            <Product key={product.id} product={product} />
+            <Product key={product.id} product={product} onClick={handleProductClick} />
           ))}
         </div>
+        {selectedProduct && (
+          <ProductDetailsModal product={selectedProduct} onClose={closeModal} />
+        )}
       </div>
     </section>
   );

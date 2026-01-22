@@ -9,13 +9,13 @@ const About = () => {
         </h2>
         <div className="w-24 h-1 bg-white mx-auto mb-12"></div>
 
-        <div className="mb-12">
+        {/* <div className="mb-12">
           <img
             src="https://naderemad.github.io/nader-wear/images/pic03.jpg"
             alt="About AngeLo Wear"
             className="w-full max-w-md mx-auto rounded-lg mb-8"
           />
-        </div>
+        </div> */}
 
         <div className="space-y-6 text-lg leading-relaxed">
           <p>

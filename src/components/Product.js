@@ -1,8 +1,11 @@
 import React from 'react';
 
-const Product = ({ product }) => {
+const Product = ({ product, onClick }) => {
   return (
-    <div className="bg-white/5 p-6 rounded-lg text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
+    <div
+      className="bg-white/5 p-6 rounded-lg text-center shadow-lg hover:shadow-xl transition-shadow duration-300 cursor-pointer"
+      onClick={() => onClick(product)}
+    >
       <img
         src={product.image}
         alt={product.name}
