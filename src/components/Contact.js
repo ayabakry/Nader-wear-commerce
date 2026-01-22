@@ -37,7 +37,7 @@ const Contact = () => {
           <div className="flex justify-center space-x-6">
             
             <a
-              href="https://www.facebook.com/profile.php?id=61585532554944"
+              href="https://web.facebook.com/profile.php?id=61585532554944"
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-dark-bg transition-colors"
@@ -46,7 +46,7 @@ const Contact = () => {
             </a>
 
             <a
-              href="https://www.instagram.com/yourprofile" // ✅ FIX: add href
+              href="https://www.instagram.com/angelowearofficial?igsh=MWt2OTF2cnEzYWJmZQ%3D%3D&utm_source=qr" 
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-dark-bg transition-colors"
@@ -54,14 +54,14 @@ const Contact = () => {
               <i className="fab fa-instagram"></i>
             </a>
 
-            <a
-              href="https://twitter.com/yourprofile" // ✅ FIX: add href
+            {/* <a
+              href="https://twitter.com/yourprofile" 
               target="_blank"
               rel="noopener noreferrer"
               className="w-12 h-12 border-2 border-white rounded-full flex items-center justify-center hover:bg-white hover:text-dark-bg transition-colors"
             >
               <i className="fab fa-x-twitter"></i>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
